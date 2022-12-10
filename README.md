@@ -1,5 +1,5 @@
 # SQLite
-- [ ] Сделать описание класса.
+* [Program code](https://github.com/mightyK1ngRichard/SQLite/blob/main/SQL_class.py)
 
 # Methods of the class:
 ```python
