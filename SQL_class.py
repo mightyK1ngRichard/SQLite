@@ -6,11 +6,10 @@ import os
 class DataBase:
     """Класс для работы с SQL таблицами."""
     def __init__(self, filename: str, titles: list, path: str = None):
-        """
-        Пример вызова: DataBase('boss', [('user_id', 'integer'), ('name', 'text')])
-        :param filename:
-        :param titles:
-        :param path:
+        """ Пример вызова: DataBase('boss', [('user_id', 'integer'), ('name', 'text')]).
+        :param filename: имя файла.
+        :param titles: заголовки файла и формат. Пример: [('id', 'integer'), ('name', 'text')]
+        :param path: Путь к файлу.
         """
         self._filename = filename
         self._path = path if path is not None else f'{filename}.db'
@@ -96,6 +95,7 @@ class DataBase:
             return False
 
     def delete_all_data(self) -> bool:
+        """ Удаляет всё содержимое таблицы. """
         try:
             db = sqlite3.connect(self._path)
             cursor = db.cursor()
@@ -136,6 +136,7 @@ class DataBase:
             return False
 
     def delete_table(self):
+        """Удаляет файл таблицы."""
         try:
             os.remove(self._path)
 
