@@ -1,5 +1,7 @@
 # SQLite
-* [Program code](https://github.com/mightyK1ngRichard/SQLite/blob/main/SQL_class.py)
+<img src="https://img.shields.io/github/license/DimaPermyakov/IU5?color=brightgreen" alt="MIT License"> <img src="https://img.shields.io/badge/language-Python-blue.svg" alt="Python Language"> <img src="https://img.shields.io/badge/language-SQLite-red.svg" alt="SLQ">
+
+* [Class implementation](https://github.com/mightyK1ngRichard/SQLite/blob/main/SQL_class.py)
 
 # Methods of the class:
 ```python
